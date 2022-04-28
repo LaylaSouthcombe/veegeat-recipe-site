@@ -6,38 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!--This line of script here-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--This line of script here-->
     <title>Document</title>
 </head>
 <body>
-    <header  class="text-center">
-        <img class="rounded float-left" src="https://img.freepik.com/free-vector/noodle-bowl-asia-food_52422-141.jpg" alt="Noodle bowl" style="width: 10em">
-        <h1 class="text-center text-success" style="display: inline-block; width: 25em">VeegEat</h1>
-        <img class="rounded float-right"src="https://img.freepik.com/free-vector/noodle-bowl-asia-food_52422-141.jpg" alt="Noodle bowl" style="width: 10em">
+    <header  class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-4">
+                <img src="./Images/Noodle-left.png" alt="Noodle bowl" class="img-fluid rounded float-start" style="width: 10em">
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light mt-4">VeegEat</h1>
+            </div>
+            <div class="col-4">
+                <img src="./Images/Noodle-right.png" alt="Noodle bowl" class="img-fluid rounded float-end" style="width: 10em">
+            </div>
+        </div> 
     </header>
-    <nav class="navbar justify-content-end">
-        <a href="#" class="nav-link text-success">Home</a>
-        <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-success" data-bs-toggle="dropdown" href="#">Recipes</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Spicy Garlic Tofu</a></li>
-                <li><a class="dropdown-item" href="#">Miso Aubergine</a></li>
-                <li><a class="dropdown-item" href="#">Honey Sriracha Tofu</a></li>
-                <li><a class="dropdown-item" href="#">Kung Pao Cauliflower</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3" >
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-secondary" href="#">Action</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider secondary"></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-        <a href="#" class="nav-link text-success">Where to eat</a>
     </nav>
-    <section>
+    <section class="bg-secondary text-center">
         <p>Spice up your weekday eats with delicious, Asian-inspired vegan meals.</p>
-        <p>Want to treat yourself? Find your the best places to eat Asian vegan food near you with our handy eatery guide.</p>
+        <p class="mb-0">Want to treat yourself? Find your the best places to eat Asian vegan food near you with our handy eatery guide!</p>
     </section>
-    <section>
-        <h2 class="text-center">Top recipes</h2>
+    <section class="bg-secondary">
+        <h2 class="text-center py-4 fs-1">Top recipes</h2>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="https://thekoreanvegan.com/wp-content/uploads/2020/07/5P4A0896-scaled-1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Spicy Garlic Tofu</h5>
@@ -46,8 +76,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card" >
                         <img class="card-img-top" src="https://sixhungryfeet.com/wp-content/uploads/2022/02/Miso-glazed-Aubergine-Nasu-Dengaku-4-1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Miso Aubergine</h5>
@@ -56,8 +86,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="https://www.budgetbytes.com/wp-content/uploads/2021/09/Honey-Sriracha-Tofu-close.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Honey Sriracha Tofu</h5>
@@ -66,8 +96,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="https://omnivorescookbook.com/wp-content/uploads/2020/08/200731_Kung-Pao-Cauliflower_5.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Kung Pao Cauliflower</h5>
@@ -83,8 +113,8 @@
         <h2 class="text-center">Top places to eat</h2>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card" >
                         <img class="card-img-top" src="https://istmedia01.s3.eu-west-1.amazonaws.com/ist_items/listing/wagamama-5c2df3f00dcaf.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Wagamama</h5>
@@ -93,8 +123,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -103,8 +133,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -113,8 +143,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 16rem;">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
