@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <!--This line of script here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--This line of script here-->
     <title>Document</title>
 </head>
 <body>
-    <header  class="container-fluid bg-secondary">
+    <header class="container-fluid bg-secondary py-3">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 col-sm-3">
                 <img src="./Images/Noodle-left.png" alt="Noodle bowl" class="img-fluid rounded float-start" style="width: 10em">
             </div>
-            <div class="col-4">
-                <h1 class="text-center text-light mt-4">VeegEat</h1>
+            <div class="col-4 col-sm-6">
+                <h1 class="text-center text-light pt-3 mt-2 display-1 ">VeegEat</h1>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-3">
                 <img src="./Images/Noodle-right.png" alt="Noodle bowl" class="img-fluid rounded float-end" style="width: 10em">
             </div>
         </div> 
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3" >
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-light" href="#"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,131 +37,150 @@
                     <li class="nav-item">
                         <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Link</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Recipes
                         </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-secondary" href="#">Action</a></li>
-                        <li><a class="dropdown-item text-secondary" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider secondary"></li>
-                        <li><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Spicy Garlic Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Miso Aubergine</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Honey Sriracha Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Kung Pao Cauliflower</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-dark" href="#">Explore More</a></li>
                     </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Where to eat</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                    <button class="btn btn-outline-light text-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
-    <section class="bg-secondary text-center">
-        <p>Spice up your weekday eats with delicious, Asian-inspired vegan meals.</p>
-        <p class="mb-0">Want to treat yourself? Find your the best places to eat Asian vegan food near you with our handy eatery guide!</p>
+    <section class="bg-secondary text-center pt-5 px-3">
+        <p class="text-light fs-4">Spice up your weekday eats with delicious, Asian-inspired vegan meals.</p>
+        <p class="text-light mb-0 fs-4">Want to treat yourself? Find your the best places to eat Asian vegan food near you with our handy eatery guide!</p>
     </section>
     <section class="bg-secondary">
         <h2 class="text-center py-4 fs-1">Top recipes</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="https://thekoreanvegan.com/wp-content/uploads/2020/07/5P4A0896-scaled-1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Spicy Garlic Tofu</h5>
-                            <p class="card-text">Korean-inspired garlic tofu spiced with gochugaru.</p>
-                            <a href="#" class="btn btn-primary">Recipe</a>
+                            <p class="card-text text-secondary">Korean-inspired garlic tofu spiced with gochugaru.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card" >
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="https://sixhungryfeet.com/wp-content/uploads/2022/02/Miso-glazed-Aubergine-Nasu-Dengaku-4-1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Miso Aubergine</h5>
-                            <p class="card-text">Soft, delicious aubergine glazed in umami-inducing miso.</p>
-                            <a href="#" class="btn btn-primary">Recipe</a>
+                            <p class="card-text text-secondary">Soft, delicious aubergine glazed in umami-inducing miso.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="https://www.budgetbytes.com/wp-content/uploads/2021/09/Honey-Sriracha-Tofu-close.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Honey Sriracha Tofu</h5>
-                            <p class="card-text">The beloved sriracha adds a ovely heat to this sweet and sticky tofu.</p>
-                            <a href="#" class="btn btn-primary">Recipe</a>
+                            <p class="card-text text-secondary">The beloved sriracha adds a lovely heat to this sweet and sticky tofu.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="https://omnivorescookbook.com/wp-content/uploads/2020/08/200731_Kung-Pao-Cauliflower_5.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Kung Pao Cauliflower</h5>
-                            <p class="card-text">A perfect side dish to add some flavour to your meal.</p>
-                            <a href="#" class="btn btn-primary">Recipe</a>
+                            <p class="card-text text-secondary">A perfect side dish to add some flavour to your meal.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2 class="text-center">Top places to eat</h2>
+    <section class="bg-secondary pb-5">
+        <h2 class="text-center py-4 fs-1">Top places to eat</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card" >
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="https://istmedia01.s3.eu-west-1.amazonaws.com/ist_items/listing/wagamama-5c2df3f00dcaf.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Wagamama</h5>
-                            <p class="card-text">A vegan feast awaits you at Wagamamas. Don't forget to ask for the free green tea!</p>
-                            <a href="#" class="btn btn-primary">Find nearest branch</a>
+                            <p class="card-text text-secondary">A vegan feast awaits you at Wagamamas; don't forget to ask for the free green tea!</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Find nearest branch</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Find nearest branch</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Find nearest branch</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                    <div class="card">
+                    <div class="card h-100 bg-light border-5 border-light">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#" class="btn btn-dark col-12 ">Find nearest branch</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="py-5">
+    <footer class="bg-dark py-5">
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <h5>Section</h5>
+                    <h5 class="text-light">Section</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
@@ -168,7 +188,7 @@
                 </div>
         
                 <div class="col-2">
-                    <h5>Section</h5>
+                    <h5 class="text-light">Section</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
@@ -176,17 +196,17 @@
                 </div>
         
                 <div class="col-2">
-                    <h5>Section</h5>
+                    <h5 class="text-light">Section</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
                     </ul>
                 </div>
         
-                <div class="col-4 offset-1">
+                <div class="col-4 offset-1 pb-2">
                     <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <h5 class="text-light">Subscribe to our newsletter</h5>
+                        <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
                         <div class="d-flex w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -194,7 +214,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <div class="d-flex justify-content-between py-1 my-1 border-top text-muted">
                     <p>© 2021 Company, Inc. All rights reserved.</p>
                 </div>
             </div>
