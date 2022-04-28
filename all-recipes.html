@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+<!--Header-->
     <header class="container-fluid bg-secondary py-3">
         <div class="row">
             <div class="col-4 col-sm-3">
@@ -26,99 +27,104 @@
             </div>
         </div> 
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3" >
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 sticky-top" >
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#"></a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                    <li>&nbsp;</li>
+                    <li class="nav-item me-5">
+                        <a id="actNav" class="nav-link active text-dark bg-warning px-4 me-5" aria-current="page" href="./index.html">Home</a>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light px-4 me-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Recipes
                         </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-secondary" href="./Recipes/spicy-garlic-tofu.html">Spicy Garlic Tofu</a></li>
-                        <li><a class="dropdown-item text-secondary" href="./Recipes/miso-aubergine.html">Miso Aubergine</a></li>
-                        <li><a class="dropdown-item text-secondary" href="./Recipes/honey-sriracha-tofu.html">Honey Sriracha Tofu</a></li>
-                        <li><a class="dropdown-item text-secondary" href="./Recipes/kung-pao-cauliflower.html">Kung Pao Cauliflower</a></li>
+                    <ul class="dropdown-menu me-5" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-secondary  ps-2" href="./Recipes/spicy-garlic-tofu.html">Spicy Garlic Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./Recipes/miso-aubergine.html">Miso Aubergine</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./Recipes/honey-sriracha-tofu.html">Honey Sriracha Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./Recipes/kung-pao-cauliflower.html">Kung Pao Cauliflower</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-dark" href="./all-recipes.html">Explore More</a></li>
+                        <li><a class="dropdown-item text-dark ps-2" href="./all-recipes.html">Explore More</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="./all-places.html">Where to eat</a>
+                        <a class="nav-link text-light px-4 me-5" href="./all-places.html">Where to eat</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light text-light" type="submit">Search</button>
+                    <input class="form-control ps-4" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light text-light ms-3" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
+<!--Recipes title-->
     <section class="bg-secondary text-center pt-5 px-3 pb-5">
         <h2 class="text-light mb-0 display-5">Recipes</h2>
     </section>
+<!--Recipe cards-->
     <section class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <div class="card h-100 bg-light border-5 border-light">
-                        <img class="card-img-top" src="https://thekoreanvegan.com/wp-content/uploads/2020/07/5P4A0896-scaled-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./Images/Spicy-tofu.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Spicy Garlic Tofu</h5>
                             <p class="card-text text-secondary">Korean-inspired garlic tofu spiced with gochugaru.</p>
                         </div>
                         <div class="card-footer bg-light border-0">
-                            <a href="./Recipes/spicy-garlic-tofu.html" class="btn btn-dark col-12 ">Recipe</a>
+                            <a href="./Recipes/spicy-garlic-tofu.html" class="btn btn-warning col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <div class="card h-100 bg-light border-5 border-light">
-                        <img class="card-img-top" src="https://sixhungryfeet.com/wp-content/uploads/2022/02/Miso-glazed-Aubergine-Nasu-Dengaku-4-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./Images/Miso-aubergine.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Miso Aubergine</h5>
                             <p class="card-text text-secondary">Soft, delicious aubergine glazed in umami-inducing miso.</p>
                         </div>
                         <div class="card-footer bg-light border-0">
-                            <a href="./Recipes/miso-aubergine.html" class="btn btn-dark col-12 ">Recipe</a>
+                            <a href="./Recipes/miso-aubergine.html" class="btn btn-warning col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <div class="card h-100 bg-light border-5 border-light">
-                        <img class="card-img-top" src="https://www.budgetbytes.com/wp-content/uploads/2021/09/Honey-Sriracha-Tofu-close.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./Images/Honey-tofu.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Honey Sriracha Tofu</h5>
                             <p class="card-text text-secondary">The beloved sriracha adds a lovely heat to this sweet and sticky tofu.</p>
                         </div>
                         <div class="card-footer bg-light border-0">
-                            <a href="./Recipes/honey-sriracha-tofu.html" class="btn btn-dark col-12 ">Recipe</a>
+                            <a href="./Recipes/honey-sriracha-tofu.html" class="btn btn-warning col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <div class="card h-100 bg-light border-5 border-light">
-                        <img class="card-img-top" src="https://omnivorescookbook.com/wp-content/uploads/2020/08/200731_Kung-Pao-Cauliflower_5.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./Images/Kung-pao-cauli.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Kung Pao Cauliflower</h5>
                             <p class="card-text text-secondary">A perfect side dish to add some flavour to your meal.</p>
                         </div>
                         <div class="card-footer bg-light border-0">
-                            <a href="./Recipes/kung-pao-cauliflower.html" class="btn btn-dark col-12 ">Recipe</a>
+                            <a href="./Recipes/kung-pao-cauliflower.html" class="btn btn-warning col-12 ">Recipe</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<!--Footer-->
     <footer class="bg-dark py-5">
         <div class="container">
             <div class="row">
@@ -153,7 +159,7 @@
                         <div class="d-flex w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                            <button class="btn btn-warning" type="button">Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -161,6 +167,6 @@
                     <p>© 2021 Company, Inc. All rights reserved.</p>
                 </div>
             </div>
-        </footer>
+    </footer>
 </body>
 </html>
