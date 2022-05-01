@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Images/Noodle-left.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>VeegEat</title>
+</head>
+<body>
+<!--Header-->
+    <header class="container-fluid bg-secondary py-3">
+        <div class="row">
+            <div class="col-4 col-sm-3">
+                <img src="../Images/Noodle-left.png" alt="Noodle bowl" class="img-fluid rounded float-start" style="width: 10em">
+            </div>
+            <div class="col-4 col-sm-6">
+                <h1 class="text-center text-light pt-3 mt-2 display-1 ">VeegEat</h1>
+            </div>
+            <div class="col-4 col-sm-3">
+                <img src="../Images/Noodle-right.png" alt="Noodle bowl" class="img-fluid rounded float-end" style="width: 10em">
+            </div>
+        </div> 
+    </header>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                    <li>&nbsp;</li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link text-light px-4 me-5" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle active text-dark bg-warning px-4 me-5" href="#" id="navbarDropdown" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recipes
+                        </a>
+                    <ul class="dropdown-menu me-5" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-secondary  ps-2" href="./spicy-garlic-tofu.html">Spicy Garlic Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./miso-aubergine.html">Miso Aubergine</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./honey-sriracha-tofu.html">Honey Sriracha Tofu</a></li>
+                        <li><a class="dropdown-item text-secondary ps-2" href="./kung-pao-cauliflower.html">Kung Pao Cauliflower</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-dark ps-2" href="../all-recipes.html">Explore More</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-4 me-5" href="../all-places.html">Where to eat</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control ps-4" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning text-light ms-3" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<!--Recipe intro-->
+    <section class="bg-secondary text-center py-5 px-3">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h2 class="text-dark display-5"><u>Kung Pao Cauliflower</u></h2>
+                <p class="text-light mb-0 fs-4">A perfect side dish to add some flavour to your meal.</p> 
+                <p class="text-light mb-0 fs-4">Best served as a side dish to one of our other great recipes.</p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </section>
+<!--Allergy/spice alert-->
+    <div class="row bg-secondary justify-content-center">
+        <div class="col-3 col-sm-1"></div>
+        <div class="col-6 col-sm-8 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-danger d-flex justify-content-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>
+                    Allergy alert! This recipe contains peanuts (can be substituted)!
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-sm-1"></div>
+    </div>
+<!--Servings etc-->
+    <div class="row justify-content-center bg-secondary nav-justified">
+        <div class="col-lg-3 col-md-5 col-sm-7 text-center mb-4 bg-warning border border-light border-5 rounded-pill text-dark py-3 p-2 mt-1 fs-3 ms-lg-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-hourglass-split me-1" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+            </svg>15 mins prep
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-lg-3 col-md-5 col-sm-7 text-center mb-4 bg-warning border border-light border-5 rounded-pill text-dark py-3 p-2 mt-1 fs-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-stopwatch me-1" viewBox="0 0 16 16">
+                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+            </svg>
+            35 mins cook
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 col-md-5 col-sm-7 text-center mb-4 bg-warning border border-light border-5 rounded-pill text-dark py-3 p-2 mt-1 fs-3 me-lg-4">
+            <img src="../Images/icons8-restaurant-50 1.svg" alt="Bootstrap" width="36" height="36" class="me-1 ">
+            4 servings
+        </div>
+    </div>
+<!--Ingredients-->
+    <div class="row justify-content-center bg-secondary pb-4">
+        <div class="col-9 bg-light border border-5 border-warning rounded-3 fs-5">
+            <h3 class="text-dark">Ingredients</h3>
+            <ul class="text-secondary">
+                <li>1 medium or small head cauliflower, cut into small florets</li>
+                <li>1 tablespoon peanut oil (or vegetable oil)</li>
+                <li>1/4 cup flour</li>
+                <li>1/4 cup non-dairy milk</li>
+                <li>1/4 cup cornstarch</li>
+                <li>1/2 cup roasted peanuts</li>
+                <li>1 bell pepper, cut into 1" (2.5 cm) pieces</li>
+                <li>4 green onions, cut into bite-sized pieces</li>
+            </ul>
+            <h3 class="text-dark">Sauce</h3>
+            <ul class="text-secondary">
+                <li>1/4 cup and 2 tablespoons Chinkiang vinegar</li>
+                <li>1/4 cup Shaoxing wine</li>
+                <li>1/4 cup soy sauce</li>
+                <li>1/4 cup sugar</li>
+                <li>1 tablespoon cornstarch</li>
+                <li>1 tablespoon peanut oil (or vegetable oil)</li>
+                <li>1 teaspoon sichuan peppercorns, crushed</li>
+                <li>6 dried Chinese chilli peppers</li>
+                <li>1" (2.5 cm) ginger, minced</li>
+                <li>4 cloves garlic, minced</li>
+            </ul>
+        </div>
+    </div>
+<!--Recipe-->
+    <div class="row bg-secondary justify-content-center pb-5">
+        <div class="col-10 bg-light border border-5 border-warning rounded-3 fs-5">
+            <div class="clearfix">
+                <img src="../Images/Kung-pao-cauli.png" class="col-md-6 float-md-end my-3 ms-md-3 border border-5 border-dark rounded-3 col-sm-12 " alt="spicy tofu">
+                <h3 class="text-dark">Recipe</h3>
+                <ol class="text-secondary">
+                    <li>Preheat the oven to 450°F (232°C). Line a large baking tray with parchment paper and spray with a light coating of cooking spray.</li>
+                    <li>Combine the Chinkiang vinegar, Shaoxing wine, soy sauce, sugar, and cornstarch in a medium-sized bowl. Stir to dissolve the sugar and cornstarch.</li>
+                    <li>Dry the cauliflower thoroughly with paper towels. Add the cauliflower florets to a large bowl. Drizzle with oil and toss a few times. Add the flour and toss until the the florets are coated. Pour in the milk and toss again. Add the cornstarch and toss until the cauliflower is evenly coated. Spread the coated cauliflower on to the lined baking tray, making sure the pieces are evenly spaced out with gaps in between. Bake for 25 minutes in total. Check the cauliflower at the 15- and 20-minute marks. If the bottom is browned, flip the cauliflower. Once the baking is finished, the cauliflower should turn golden brown spotly and crispy throughout.</li>
+                    <li>While the cauliflower is baking, make the sauce. Add the oil, peppercorns, and dried chilis to a small saucepan and turn the heat to medium-low. Once they become fragrant, about 1 minute, add the ginger and garlic. Cook until they are just starting to brown, another 1 to 2 minutes. Stir the sauce again to re-dissolve the cornstarch completely and add it to the pan. Raise the heat to medium-high and bring it to a boil. Boil until the sauce is just thickened. Remove the pot from the heat and set it aside.</li>
+                    <li>After the cauliflower has baked for 25 minutes, pull the tray out and turn the heat to 500°F. Add the peanuts, peppers, and green onions. Put the tray back in the oven and cook for another 5 minutes, until the peppers are lightly cooked.</li>
+                    <li>Pour the sauce over the cauliflower and gently toss to coat. Serve immediately as a side or a main.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<!--Comments-->
+    <div class="bg-secondary pb-4">
+        <div class="container col-10 bg-dark text-light border border-warning border-5 rounded-3">
+            <h3 class="my-2">Comments</h3>
+            <div class="row bg-dark justify-content-center mb-3">
+                <div class="col-11 bg-secondary rounded-3">
+                    <p class="mb-1"><b>Name</b></p>
+                    <p class="mb-1">Comment</p>
+                </div>
+            </div>
+            <div class="row bg-dark justify-content-center">
+                <div class="col-11">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your comment"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-dark justify-content-center">
+                <div class="col-5 ">
+                    <div class="mb-3 me-2">
+                        <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                </div>
+                <div class="d-grid d-md-block col-5 col-md-4 offset-sm-1 offset-md-2 h-75 text-end">
+                        <button class="btn btn-warning px-5 " type="button">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+    <footer class="bg-dark pt-4 pb-0">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <h5 class="text-light">Section</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <h5 class="text-light">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-sm-4 col-md-2 col-lg-2">
+                    <h5 class="text-light">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 1</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link 2</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-lg-5 col-md-5 sol-sm-6 pb-2">
+                    <form>
+                        <h5 class="text-light">Subscribe to our newsletter</h5>
+                        <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-warning" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-between py-1 my-1 border-top text-muted">
+                    <p>© 2021 Company, Inc. All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
